@@ -1,6 +1,6 @@
 from pathlib import Path
 from advent.common import TEST_INPUTS_FOLDER
-from ..solutions.one import find_max_calories, find_top_three_calories
+from advent.solutions.one import find_max_calories, find_top_three_calories
 
 
 TEST_INPUT_FILE_NAME = "1.txt"
