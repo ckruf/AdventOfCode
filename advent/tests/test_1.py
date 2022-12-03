@@ -1,14 +1,17 @@
-from .constants import TEST_INPUT_LOCATION
+from pathlib import Path
+from advent.common import TEST_INPUTS_FOLDER
 from ..solutions.one import find_max_calories, find_top_three_calories
 
 
+TEST_INPUT_FILE_NAME = "1.txt"
+TEST_INPUT_FILE_PATH = Path(TEST_INPUTS_FOLDER, TEST_INPUT_FILE_NAME)
+
+
 def test_find_max_calories():
-    file_location = TEST_INPUT_LOCATION + "1.txt"
-    result = find_max_calories(file_location)
+    result = find_max_calories(TEST_INPUT_FILE_PATH)
     assert result == 8413
 
 
 def test_find_top_three_calories():
-    file_location = TEST_INPUT_LOCATION + "1.txt"
-    result = find_top_three_calories(file_location)
+    result = find_top_three_calories(TEST_INPUT_FILE_PATH)
     assert result == 15113
