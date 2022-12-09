@@ -1,11 +1,10 @@
 from __future__ import annotations
 from typing import Optional
 from pathlib import Path
-from advent.common import yield_lines, INPUTS_FOLDER, TEST_INPUTS_FOLDER
+from advent.common import yield_lines, INPUTS_FOLDER
 
 INPUT_FILE_NAME = "7.txt"
 INPUT_FILE_PATH = Path(INPUTS_FOLDER, INPUT_FILE_NAME)
-TEST_INPUT_PATH = Path(TEST_INPUTS_FOLDER, INPUT_FILE_NAME)
 
 
 class File:
