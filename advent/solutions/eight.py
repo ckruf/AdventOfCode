@@ -1,10 +1,9 @@
 from pathlib import Path
-from advent.common import yield_lines, INPUTS_FOLDER, TEST_INPUTS_FOLDER
+from advent.common import yield_lines, INPUTS_FOLDER
 
 
 INPUT_FILE_NAME = "8.txt"
 INPUT_FILE_PATH = Path(INPUTS_FOLDER, INPUT_FILE_NAME)
-TEST_INPUT_FILE_PATH = Path(TEST_INPUTS_FOLDER, INPUT_FILE_NAME)
 
 
 def count_visible(file_path: str | Path) -> int:
